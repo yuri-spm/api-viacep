@@ -1,12 +1,38 @@
 <?php
 
-require __DIR__."/composer.json";
+require __DIR__."/vendor/autoload.php";
 
-$student = new \Source\Model\Student(
-    "Yuri ",
+$user = new \Source\Core\User(
+    "Yuri",
     "Monte",
-    "yuri.monte",
-    "Rua"
+    "17439749065",
+    "teste@gmail.com",
+    "M"
 );
 
-var_dump($student);
+
+
+$cep = validaCep("21230720");
+
+$userAddress = new \Source\Core\Address(
+    $cep->cep,
+    $cep->logradouro,
+    $cep->bairro,
+    "Casa",
+    69,
+    $cep->localidade,
+    $cep->uf
+);
+
+
+$register = new \Source\Model\Register(
+    $user,
+    $userAddress
+);
+
+
+var_dump($user, $userAddress, $register);
+
+
+
+
