@@ -1,0 +1,30 @@
+{
+
+  "name" : "yuri-spm/projeto_escola",
+  "description": "Projeto escola",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuri Monte",
+      "email": "yuri.spm@gmail.com"
+
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Support/Config.php",
+      "source/Support/Helpers.php"
+    ]
+  },
+  "require": {
+    "league/plates": "3.*"
+  }
+
+}
