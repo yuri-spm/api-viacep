@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cb74ad-e34b-4d21-94b0-e08b2f7dcd37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Core/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Core/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstackphp/fsphp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstackphp/fsphp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullstackphp/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Model/Classroom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Model/Student.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Model/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Model/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Core/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Model/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Model/Register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Support/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/Support/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Support/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\project_escola\teste" />
       <recent name="C:\laragon\www\project_escola\source\Core" />
       <recent name="C:\laragon\www\project_escola\source" />
       <recent name="C:\laragon\www\project_escola" />
@@ -96,7 +95,9 @@
       <updated>1622599988305</updated>
       <workItem from="1622599990912" duration="812000" />
       <workItem from="1622600847091" duration="4775000" />
-      <workItem from="1622629025377" duration="23102000" />
+      <workItem from="1622629025377" duration="23529000" />
+      <workItem from="1622681321520" duration="9006000" />
+      <workItem from="1622921020953" duration="584000" />
     </task>
     <servers />
   </component>

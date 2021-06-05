@@ -14,15 +14,11 @@ class User
 
     protected string $email;
 
-    protected int $employee;
-
-    protected int $student;
-
     protected string $sexo;
 
 
 
-    public function __construct($first_name, $last_name, $cpf, $email, $sexo)
+    public function __construct($first_name, $last_name, $cpf = null, $email, $sexo)
     {
             if(!validaCPF($cpf)){
                 echo "CFP Invalido </br>";
@@ -41,6 +37,8 @@ class User
             $this->sexo = $sexo;
 
     }
+
+
 
     /**
      * @return string
@@ -105,7 +103,6 @@ class User
     {
         $this->email = $email;
     }
-
 
 
 }

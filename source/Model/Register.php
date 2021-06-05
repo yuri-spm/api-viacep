@@ -3,10 +3,11 @@
 
 namespace Source\Model;
 
+use Source\Core\Model;
 use Source\Core\User;
 use Source\Core\Address;
 
-class Register
+class Register extends Model
 {
     protected  static $safe = [];
 
@@ -18,7 +19,7 @@ class Register
 
     private $address;
 
-    public function __construct(User $user, Address$address)
+    public function __construct(User $user, Address $address)
     {
         $this->user = $user;
         $this->address = $address;
@@ -35,6 +36,11 @@ class Register
     }
 
     public function findByEmail()
+    {
+
+    }
+
+    public function findByCpf()
     {
 
     }

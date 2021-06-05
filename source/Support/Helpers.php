@@ -36,13 +36,17 @@ function validaCPF($cpf){
 
 function validaCep($cep)
 {
-    $str = filter_var($cep, FILTER_SANITIZE_STRIPPED);
-   $str = preg_replace("/[^0-9]/", "", $cep);
-   $url = "https://viacep.com.br/ws/$cep/json/";
 
-   $cep = file_get_contents($url);
-   $cep = json_decode($cep);
-   return $cep;
+       $str = filter_var($cep, FILTER_SANITIZE_STRIPPED);
+       $str = preg_replace("/[^0-9]/", "", $cep);
+       $url = "https://viacep.com.br/ws/$cep/json/";
+
+       $cep = file_get_contents($url);
+       $cep = json_decode($cep);
+       return $cep;
+
+
+
 }
 
 
