@@ -87,7 +87,7 @@
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Rua</span>
-                            <input id="rua" name="rua" class="form-control" placeholder=""  readonly="readonly" type="text">
+                            <input id="rua" name="rua" class="form-control" placeholder=""   type="text">
                         </div>
 
                     </div>
@@ -102,7 +102,7 @@
                     <div class="col-md-3">
                         <div class="input-group">
                             <span class="input-group-addon">Bairro</span>
-                            <input id="bairro" name="bairro" class="form-control" placeholder=""  readonly="readonly" type="text">
+                            <input id="bairro" name="bairro" class="form-control" placeholder=""   type="text">
                         </div>
 
                     </div>
@@ -113,7 +113,7 @@
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Cidade</span>
-                            <input id="cidade" name="cidade" class="form-control" placeholder=""   readonly="readonly" type="text">
+                            <input id="cidade" name="cidade" class="form-control" placeholder=""   type="text">
                         </div>
 
                     </div>
@@ -145,10 +145,13 @@
                     data: $('.frm-register-client').serialize(),
                     success: function (meu_param) {
                         console.log(meu_param)
+                    },
+                    error:function(ex, hre){
+                        console.log()
                     }
                 })
             })
-        }
+        })
     </script>
 
 
