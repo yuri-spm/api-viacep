@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<form class='frm-register-client' class="form-horizontal" class="enviar-form" >
+<form id='frm-register-client' class="form-horizontal" class="enviar-form" >
     <fieldset>
         <div class="panel panel-primary">
             <div class="panel-heading">Cadastro de Cliente</div>
@@ -113,7 +113,7 @@
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Cidade</span>
-                            <input id="cidade" name="cidade" class="form-control" placeholder=""    type="text">
+                            <input id="cidade" name="cidade" class="form-control" placeholder=""   readonly="readonly" type="text">
                         </div>
 
                     </div>
@@ -142,14 +142,13 @@
                 $.ajax({
                     url: 'insert.php',
                     type: 'post',
-                    data: $('#frm-register-client').serialize(),
+                    data: $('.frm-register-client').serialize(),
                     success: function (meu_param) {
                         console.log(meu_param)
                     }
                 })
             })
-        })
-
+        }
     </script>
 
 
