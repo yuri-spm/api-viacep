@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70cb74ad-e34b-4d21-94b0-e08b2f7dcd37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fullstackphp/fsphp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstackphp/fsphp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fullstackphp/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Model/Classroom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Core/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Model/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Model/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Support/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Support/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Support/Helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Support/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/Core/Message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,10 +48,17 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -97,7 +97,11 @@
       <workItem from="1622600847091" duration="4775000" />
       <workItem from="1622629025377" duration="23529000" />
       <workItem from="1622681321520" duration="9006000" />
-      <workItem from="1622921020953" duration="584000" />
+      <workItem from="1622921020953" duration="1266000" />
+      <workItem from="1623001370854" duration="2042000" />
+      <workItem from="1623189505380" duration="4964000" />
+      <workItem from="1623229244911" duration="842000" />
+      <workItem from="1623282285996" duration="3307000" />
     </task>
     <servers />
   </component>
