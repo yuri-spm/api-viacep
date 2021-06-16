@@ -7,15 +7,14 @@
 
 <!DOCTYPE html>
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 
 </head>
 <body>
 
-<form id='frm-register-client' class="form-horizontal" class="enviar-form" >
+<form id='frm-register-client' class="form-horizontal"  >
     <fieldset>
         <div class="panel panel-primary">
             <div class="panel-heading">Cadastro de Cliente</div>
@@ -53,11 +52,7 @@
                         <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md"  type="text" maxlength="11" pattern="[0-9]+$">
                     </div>
 
-                    <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
-                    <div class="col-md-2">
-                        <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md"  type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-                    </div>
-                </div>
+              
 
 
                 <div class="form-group">
@@ -77,7 +72,7 @@
                         <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md"  value="" type="search" maxlength="8" pattern="[0-9]+$">
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                        <button id="pesquisar-cep" type="button" class="btn btn-primary" >Pesquisar</button>
                     </div>
                 </div>
 
@@ -123,7 +118,7 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label" for="Cadastrar"></label>
                     <div class="col-md-8">
-                        <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                        <button id="enviar-form" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
                         <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
                     </div>
                 </div>
@@ -134,24 +129,39 @@
 
     </fieldset>
 </form>
-
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
     <script>
-        $(function(){
-            $('#enviar-form').click(function () {
-                $.ajax({
-                    url: 'insert.php',
-                    type: 'post',
-                    data: $('.frm-register-client').serialize(),
-                    success: function (meu_param) {
-                        console.log(meu_param)
-                    },
-                    error:function(ex, hre){
-                        console.log()
-                    }
-                })
-            })
-        })
+        $(function() {
+
+            $('#pesquisar-cep').click(function() {
+
+    $.ajax({
+        url: 'insert.php',
+        type: 'post',
+        data: {'cep' : $('#cep').val()},
+        success: function(response) {
+            console.log(response);
+            if (response){
+                var json = JSON.parse(response);
+                $('#rua').val(json.logradouro)
+
+            }
+
+        },
+        error: function(ex, hre) {
+            console.log()
+        }
+
+
+    })
+
+})
+
+})
+            
+        
     </script>
 
 
