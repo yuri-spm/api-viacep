@@ -133,25 +133,29 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
     <script>
+
         $(function() {
 
             $('#pesquisar-cep').click(function() {
+            var cep = $('#cep').val();
+
 
     $.ajax({
-        url: 'insert.php',
-        type: 'post',
-        data: {'cep' : $('#cep').val()},
+        url: `https://viacep.com.br/ws/${cep}/json/`,
+        type: 'get',
+
         success: function(response) {
             console.log(response);
             if (response){
-                var json = JSON.parse(response);
-                $('#rua').val(json.logradouro)
+                // var json = JSON.parse(response);
+                $('#rua').val(response.logradouro)
+
 
             }
 
         },
         error: function(ex, hre) {
-            console.log()
+            console.log('error')
         }
 
 
