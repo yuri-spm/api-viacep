@@ -8,9 +8,10 @@ $twig = new Twig\Environment($loader, [
     'cache' => false,
     
 ]);
+$twig->addExtension(new Twig\Extension\DebugExtension());
+
+echo $template = $twig->render('form.html.twig');
 
 
-
-echo $template = $twig->render('home.html.twig');
 
 
