@@ -2,12 +2,54 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Consulta {% endblock %} </title>
-        {% block stylesheets %} {% endblock %}
+        <title>
+            {% block title %}
+                Consulta 
+            {% endblock %}
+        </title>
+        {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %} {% endblock %}
-        {% block script %}        
-            <script src="js/script.js"></script>
+        {% block body %}{% endblock %}
+        {% block script %}
+            <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+            <script>
+
+        $(function() {
+
+            $('#pesquisar-cep').click(function() {
+            var cep = $('#cep').val();
+
+
+        $.ajax({
+            url: `https://viacep.com.br/ws/${cep}/json/`,
+            type: 'get',
+
+             success: function(response) {
+                 console.log(response);
+            if (response){
+                // var json = JSON.parse(response);
+                $('#rua').val(response.logradouro),
+                $('#bairro').val(response.bairro),
+                $('#cidade').val(response.localidade)
+
+
+            }
+
+            },
+                error: function(ex, hre) {
+                console.log('error')
+            }
+
+
+        })
+
+    })
+
+})
+
+    </script>
         {% endblock %}
     </body>
+</html>
